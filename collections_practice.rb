@@ -1,4 +1,12 @@
 # your code goes here
+
+def begins_with_r(array)
+  tools = true
+  array.each do |element|
+    if element[0] != "r"
+    tools = false
+end
+
 def contain_a(array)
   array.select{|element| element.include?("a")}
 end
