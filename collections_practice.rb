@@ -5,6 +5,8 @@ def begins_with_r(array)
   array.each do |element|
     if element[0] != "r"
     tools = false
+  end
+  tools
 end
 
 def contain_a(array)
