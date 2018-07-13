@@ -43,5 +43,15 @@ def find_cool(array)
 end
 
 def organize_schools(array)
-  
+  by_location = {}
+  array.each do |school, location_hash|
+    location = location_hash[:location]
+  if by_location[location]
+    by_location[location]<<school
+  else
+    by_location[location] == nil
+    by_location[location] <<school
+  end
+end
+by_location
 end
