@@ -19,3 +19,7 @@ def count_elements(array)
     end
   counts.keys
 end
+
+def find_cool(array)
+  array.select {|entry| entry if entry.has_value?("cool")}
+end
